@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5256480BD5E6267DFB7C3639 /* Pods_DBoxClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFCDCF673DFB66C6F2B44A0 /* Pods_DBoxClient.framework */; };
 		DCA8DAF11E292D6C001B7D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8DAF01E292D6C001B7D77 /* AppDelegate.swift */; };
 		DCA8DAF31E292D6C001B7D77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8DAF21E292D6C001B7D77 /* ViewController.swift */; };
 		DCA8DAF61E292D6C001B7D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA8DAF41E292D6C001B7D77 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19340C273E0D3F8FF7F7C5B8 /* Pods-DBoxClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBoxClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBoxClient/Pods-DBoxClient.release.xcconfig"; sourceTree = "<group>"; };
+		CBFCDCF673DFB66C6F2B44A0 /* Pods_DBoxClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBoxClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E99F8621E36B03512E0698 /* Pods-DBoxClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBoxClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBoxClient/Pods-DBoxClient.debug.xcconfig"; sourceTree = "<group>"; };
 		DCA8DAED1E292D6C001B7D77 /* DBoxClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBoxClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA8DAF01E292D6C001B7D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA8DAF21E292D6C001B7D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5256480BD5E6267DFB7C3639 /* Pods_DBoxClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4D42E0B95E68193FDE4ABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBFCDCF673DFB66C6F2B44A0 /* Pods_DBoxClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F1EDDECFCC0C45765F396EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7E99F8621E36B03512E0698 /* Pods-DBoxClient.debug.xcconfig */,
+				19340C273E0D3F8FF7F7C5B8 /* Pods-DBoxClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCA8DAE41E292D6C001B7D77 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				DCA8DB041E292D6C001B7D77 /* DBoxClientTests */,
 				DCA8DB0F1E292D6C001B7D77 /* DBoxClientUITests */,
 				DCA8DAEE1E292D6C001B7D77 /* Products */,
+				6F1EDDECFCC0C45765F396EF /* Pods */,
+				4C4D42E0B95E68193FDE4ABB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA8DB151E292D6C001B7D77 /* Build configuration list for PBXNativeTarget "DBoxClient" */;
 			buildPhases = (
+				D0FD42E73083A65B7B8DEA60 /* [CP] Check Pods Manifest.lock */,
 				DCA8DAE91E292D6C001B7D77 /* Sources */,
 				DCA8DAEA1E292D6C001B7D77 /* Frameworks */,
 				DCA8DAEB1E292D6C001B7D77 /* Resources */,
+				03D26B9EB758FFA08E982E15 /* [CP] Embed Pods Frameworks */,
+				0CB705B77A5F4756FC084215 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D26B9EB758FFA08E982E15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBoxClient/Pods-DBoxClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CB705B77A5F4756FC084215 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBoxClient/Pods-DBoxClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0FD42E73083A65B7B8DEA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCA8DAE91E292D6C001B7D77 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		DCA8DB161E292D6C001B7D77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E99F8621E36B03512E0698 /* Pods-DBoxClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TKA48YVS5T;
@@ -426,6 +502,7 @@
 		};
 		DCA8DB171E292D6C001B7D77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19340C273E0D3F8FF7F7C5B8 /* Pods-DBoxClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TKA48YVS5T;

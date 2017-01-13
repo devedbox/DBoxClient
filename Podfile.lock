@@ -1,0 +1,22 @@
+PODS:
+  - AXAlertView (0.1.5):
+    - AXAnimationChain
+  - AXAnimationChain (0.0.7)
+  - AXIndicatorView (0.0.4)
+  - AXPracticalHUD (1.1.5):
+    - AXIndicatorView
+
+DEPENDENCIES:
+  - AXAlertView
+  - AXAnimationChain
+  - AXPracticalHUD
+
+SPEC CHECKSUMS:
+  AXAlertView: 8ec553cc73e8c07deae2b88f40fc9cbf114b6b4b
+  AXAnimationChain: 022ca192ec133d232a980bb96246eaba1256bb71
+  AXIndicatorView: 4118a1fb5f8055b0aafb034c7815ba025d520f33
+  AXPracticalHUD: 954743eb9d46ce475492e0ee63114eae1e563c41
+
+PODFILE CHECKSUM: 9e07a72737c84c39ce65699c6327fdde82d878d7
+
+COCOAPODS: 1.2.0.beta.3
